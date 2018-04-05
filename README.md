@@ -22,13 +22,13 @@ CREATE INDEX ON books(price);
 2. Benchmark INSERT:
 
 ```bash
-go run ormtest.go -insert <library>
+go run ormbench.go -insert <library>
 ```
 
 3. Benchmark SELECT:
 
 ```bash
-go run ormtest.go -select <library>
+go run ormbench.go -select <library>
 ```
 
 ## Available Libraries
