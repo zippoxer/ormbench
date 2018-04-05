@@ -38,6 +38,8 @@ var (
 func main() {
 	flag.Parse()
 
+	fake.Seed(time.Now().UnixNano())
+
 	if *memprofile != "" {
 		debug.SetGCPercent(-1)
 	}
